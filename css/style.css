@@ -92,18 +92,19 @@ header {
 /*footer start*/
 footer {
   width: 100%;
-  height: 400px;
   background-color: rgba(0, 0, 0, 0.05);
 }
 .footerWrap {
-  margin: 0 350px;
+  margin: 0 35vh;
 }
 .info {
   width: 1200px;
+  padding: 40px 0;
 }
 .info > p {
   line-height: 2;
   color: #404040;
+  font-size: 18px;
 }
 .info > p > span {
   font-weight: bolder;
@@ -112,7 +113,15 @@ footer {
   width: 130px;
   display: flex;
   justify-content: space-between;
+  padding: 60px 0;
 }
+
+.sns > li {
+  /* border: 1px solid #404040;
+  border-radius: 50%;
+  background-color: #404040; */
+}
+
 .insta > a > i {
   font-size: 30px;
 }
