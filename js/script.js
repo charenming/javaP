@@ -17,8 +17,8 @@
 $(window).scroll(function (evt) {
   var y = $(this).scrollTop();
   if (y > 120) {
-    $(".header").removeClass(".gnbBg");
+    $(".header").removeClass("gnbBg");
   } else {
-    $(".header").addClass(".gnbBg");
+    $(".header").addClass("gnbBg");
   }
 });

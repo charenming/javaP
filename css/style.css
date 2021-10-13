@@ -12,6 +12,7 @@ header {
   align-items: center;
   position: fixed;
   z-index: 999;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .gnbBg {
   background-color: #fff;
@@ -133,3 +134,8 @@ footer {
 }
 
 /*footer end*/
+
+.gnb01Contents {
+  height: 800px;
+  padding-top: 80px;
+}
