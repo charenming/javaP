@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 #wrap {
   margin: 0 auto;
 }
@@ -12,10 +11,16 @@ header {
   align-items: center;
   position: fixed;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: inherit;
+  border-bottom: 0.5px solid #fff;
 }
-.gnbBg {
+
+.header.gnbBg {
   background-color: #fff;
+}
+.gnb > li > a.gnbColor,
+.liveReservation > a > i.gnbColor {
+  color: #333;
 }
 
 .logo {
@@ -29,7 +34,7 @@ header {
 }
 
 .gnb {
-  width: 500px;
+  width: 600px;
   display: flex;
   justify-content: space-around;
 }
@@ -40,9 +45,23 @@ header {
   color: #fff;
 }
 
-.liveReservation {
+.liveReservation > a {
   width: 200px;
   color: #fff;
+}
+
+.headerGnb {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+.headerGnb > .gnb > li > a,
+.headerGnb > .liveReservation > a > i {
+  color: #333;
 }
 
 /*visual start*/
@@ -96,10 +115,10 @@ footer {
   background-color: rgba(0, 0, 0, 0.05);
 }
 .footerWrap {
+  width: 1200px;
   margin: 0 35vh;
 }
 .info {
-  width: 1200px;
   padding: 40px 0;
 }
 .info > p {
@@ -117,12 +136,6 @@ footer {
   padding: 60px 0;
 }
 
-.sns > li {
-  /* border: 1px solid #404040;
-  border-radius: 50%;
-  background-color: #404040; */
-}
-
 .insta > a > i {
   font-size: 30px;
 }
@@ -135,7 +148,193 @@ footer {
 
 /*footer end*/
 
-.gnb01Contents {
-  height: 800px;
-  padding-top: 80px;
+#gnb02Contents {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.gallery {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-rows: repeat(7 1fr);
+  padding: 100px 0;
+}
+.gallery li {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 400px;
+  height: 400px;
+}
+.gallery > li:hover img {
+  transform: scale(1.2);
+  transition: transform 1s;
+  filter: brightness(70%);
+}
+
+.gallery > li > img {
+  width: 100%;
+  height: 100%;
+}
+
+.imgbox01 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.imgbox02 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.imgbox03 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.imgbox04 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.imgbox05 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.imgbox06 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+#gnb03Contents {
+  padding: 150px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title {
+  margin: 0 auto;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title > img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.titleTxt {
+  font-size: 30px;
+  text-align: center;
+  line-height: 2;
+  color: rgb(158, 146, 131);
+}
+
+.serviceMenu {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: repeat(1fr 1.5fr);
+}
+.serviceMenu > li {
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.serviceMenu > li > img {
+  width: 80vw;
+  height: 80vh;
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.serviceTxtDetail > li {
+  line-height: 2;
+}
+
+.serviceImg03 {
+  background-image: url(../images/서비스/wine_white.jpg);
+}
+
+.serviceMenu > li:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  height: 300px;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.serviceMenu > li:nth-child(2n) > h2,
+.txtBold {
+  color: rgb(158, 146, 131);
+}
+.serviceMenu > li:nth-child(2n-1) {
+  height: 15vh;
+}
+
+.serviceImg01 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.serviceTxt01 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.serviceImg02 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.serviceTxt02 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.serviceImg03 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.serviceTxt03 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.serviceImg04 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.serviceTxt04 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.serviceImg05 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.serviceTxt05 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.serviceImg06 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.serviceTxt06 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+
+.googlemap1 {
+  width: 1200px;
 }

@@ -34,7 +34,7 @@
 
   <body>
     <div id="wrap">
-      <header>
+      <header class="headerGnb" id="headerGnb">
         <div class="logo">
           <a href="../index.html"
             ><img src="../images/logo.png" alt="logo"
@@ -93,22 +93,5 @@
         <!--footerWrap-->
       </footer>
     </div>
-
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        effect: "fade",
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
   </body>
 </html>
